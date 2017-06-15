@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NxC-5z-B7r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Decks-->
+        <scene sceneID="IF7-55-RXm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Decks" id="7Au-vN-9qy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Decks" id="beb-XZ-JRw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzK-AO-AAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821.5625" y="3.1690140845070425"/>
+        </scene>
+        <!--Stats-->
+        <scene sceneID="3Ps-sd-3OZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Stats" id="h3u-UK-dcx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settin" id="vQw-oL-bpT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZh-kH-6lU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822.5" y="247.18309859154931"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="NYM-39-bdi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Setting" id="Gyr-tL-cAs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Setting" id="LLE-8T-v3u"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Hk-6L-cHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725" y="341.19718309859155"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Si9-Y8-tS4">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarController" automaticallyAdjustsScrollViewInsets="NO" id="NxC-5z-B7r" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KOV-97-Suo">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.35100102424621582" green="0.18077552318572998" blue="0.89912623167037964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7Au-vN-9qy" kind="relationship" relationship="viewControllers" id="PaQ-de-g5b"/>
+                        <segue destination="Gyr-tL-cAs" kind="relationship" relationship="viewControllers" id="OYx-Kj-oEf"/>
+                        <segue destination="h3u-UK-dcx" kind="relationship" relationship="viewControllers" id="nTa-Y4-nRn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrp-20-QcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.875" y="123.59154929577466"/>
+        </scene>
+    </scenes>
+</document>
