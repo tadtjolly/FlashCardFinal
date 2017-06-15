@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "F0b-vo-jfQ"; */
+"F0b-vo-jfQ.normalTitle" = "Done";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "Jn4-No-Btx"; */
+"Jn4-No-Btx.normalTitle" = "English";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "bN7-Q0-1pZ"; */
+"bN7-Q0-1pZ.text" = "Language";
+
+/* Class = "UIButton"; normalTitle = "Vietnamese"; ObjectID = "iNm-Uf-oDz"; */
+"iNm-Uf-oDz.normalTitle" = "Vietnamese";
+
+/* Class = "UILabel"; text = "Remind daily at:"; ObjectID = "sot-DI-kFM"; */
+"sot-DI-kFM.text" = "Remind daily at:";

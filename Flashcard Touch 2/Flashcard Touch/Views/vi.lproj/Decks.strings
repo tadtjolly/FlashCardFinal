@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "name deck"; ObjectID = "GjL-AC-ZHz"; */
+"GjL-AC-ZHz.text" = "Tên Bộ Từ";
+
+/* Class = "UIButton"; normalTitle = "Create a new deck"; ObjectID = "HOu-6f-6qC"; */
+"HOu-6f-6qC.normalTitle" = "Tạo Bộ Từ Mới";
+
+/* Class = "UILabel"; text = "30"; ObjectID = "HuP-77-m3Z"; */
+"HuP-77-m3Z.text" = "30";
+
+/* Class = "UITabBarItem"; title = "Decks"; ObjectID = "NPy-ES-FQM"; */
+"NPy-ES-FQM.title" = "Bộ Từ";
+
+/* Class = "UILabel"; text = "terms"; ObjectID = "a8L-yc-Sr0"; */
+"a8L-yc-Sr0.text" = "Từ";
+
+/* Class = "UINavigationItem"; title = "Deck"; ObjectID = "tjf-tD-sPt"; */
+"tjf-tD-sPt.title" = "Bộ Từ";

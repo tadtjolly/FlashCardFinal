@@ -102,7 +102,7 @@ extension LoginGoogleViewController: GIDSignInDelegate{
                     self.uidLogin = fUser.uid
                     
                 }
-                
+                UID = self.uidLogin
                 let sb = UIStoryboard(name: "Main", bundle: nil)
 //                let viewController = sb.instantiateViewController(withIdentifier: "tabBarController")
                 let viewController = sb.instantiateInitialViewController() as! UITabBarController

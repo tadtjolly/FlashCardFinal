@@ -1,0 +1,27 @@
+
+/* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "11I-o6-l48"; */
+"11I-o6-l48.title" = "Done";
+
+/* Class = "UILabel"; text = "Defination"; ObjectID = "PLU-s9-WZl"; */
+"PLU-s9-WZl.text" = "Defination";
+
+/* Class = "UILabel"; text = "Term"; ObjectID = "YsL-Sr-Van"; */
+"YsL-Sr-Van.text" = "Term";
+
+/* Class = "UINavigationItem"; title = "Edit"; ObjectID = "jUf-E7-Ed5"; */
+"jUf-E7-Ed5.title" = "Edit";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "jpb-WN-cff"; */
+"jpb-WN-cff.normalTitle" = "Edit";
+
+/* Class = "UIBarButtonItem"; title = "10"; ObjectID = "lGk-bw-RRp"; */
+"lGk-bw-RRp.title" = "10";
+
+/* Class = "UIButton"; normalTitle = "Game1"; ObjectID = "pr0-4w-RjK"; */
+"pr0-4w-RjK.normalTitle" = "Game1";
+
+/* Class = "UILabel"; text = "countTerm"; ObjectID = "vd1-kf-wCL"; */
+"vd1-kf-wCL.text" = "countTerm";
+
+/* Class = "UIBarButtonItem"; title = ">"; ObjectID = "zvQ-eK-Fhw"; */
+"zvQ-eK-Fhw.title" = ">";

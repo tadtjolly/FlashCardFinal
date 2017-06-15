@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
+var UID = " " 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,7 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        
+        Locale.setupInitialLanguage()
+        setupNotifications()
+
 //        // Google Analystic
 //        guard let gai = GAI.sharedInstance() else {
 //            assert(false, "Google Analytics not configured correctly")
@@ -35,7 +39,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-    
+    fileprivate func setupNotifications() {
+        let nc = NotificationCenter.default
+        nc.addObserver(forName: NSLocale.currentLocaleDidChangeNotification, object: nil, queue: OperationQueue.main) {
+            [weak self] notification in
+            guard let `self` = self else { return }
+            
+            //	this is the only way I know of to force-reload storyboard-based stuff
+            //	limitations like this is one of the main reason why I avoid basing entire app on them
+            //	since doing this essentialy resets the app and all user-generated context and data
+            
+//            let sb = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = sb.instantiateInitialViewController()
+//            self.window?.rootViewController = vc
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            //                let viewController = sb.instantiateViewController(withIdentifier: "tabBarController")
+            let viewController = sb.instantiateInitialViewController() as! UITabBarController
+            let navivc = viewController.viewControllers![0] as! UINavigationController
+            let deckvc = navivc.viewControllers[0] as! DeckViewController
+            deckvc.UID = UID
+            //            print(uidLogin)
+            //                viewController.UID = self.uidLogin
+            
+            //                viewController.mangDictCount = self.mangDictCount
+            //                viewController.decks = self.decks
+            //                print("-------------\(viewController.decks)")
+            //                viewController.decksversion2 = self.decksversion2
+            
+            //self.present(viewController, animated: true, completion: nil)
+            self.window?.rootViewController = viewController
+
+
+        }
+    }
+
     //gọi hàm application open URL
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         return GIDSignIn.sharedInstance().handle(url,
