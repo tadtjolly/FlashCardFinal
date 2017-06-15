@@ -117,8 +117,7 @@ extension LoginGoogleViewController: GIDSignInDelegate{
                 //                print("-------------\(viewController.decks)")
                 //                viewController.decksversion2 = self.decksversion2
                 
-                self.navigationController?.pushViewController(viewController, animated: true)
-                
+                self.present(viewController, animated: true, completion: nil)
                 
             })
         }
